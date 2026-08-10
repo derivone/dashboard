@@ -304,11 +304,11 @@ function nextStep() {
   document.getElementById("errEmail").innerText = "";
 
   if(email === "") {
-    document.getElementById("errEmail").innerText = "Email wajib diisi";
+    document.getElementById("errEmail").innerText = "Please enter a valid email or phone.";
     return;
   }
   if(!emailRegex.test(email)) {
-    document.getElementById("errEmail").innerText = "Format email tidak valid";
+    document.getElementById("errEmail").innerText = "Please enter a valid email address.";
     return;
   }
 
@@ -328,7 +328,7 @@ document.getElementById("form2Langkah").addEventListener("submit", function(e){
   document.getElementById("errPassword").innerText = "";
 
   if(pass.length < 6) {
-    document.getElementById("errPassword").innerText = "Password minimal 6 karakter";
+    document.getElementById("errPassword").innerText = "Password is required.";
     return;
   }
 
